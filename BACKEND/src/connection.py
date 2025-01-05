@@ -7,7 +7,7 @@ class Connect():
     postgres_file_name = "attendance_db"
     #postgres_url = f"postgres:///{postgres_file_name}"
     #postgres_url = "postgresql://username:password@localhost:5432/attendance_db"
-
+ 
     engine = AsyncEngine(
         create_engine(Config.DATABASE_URL, echo=True)
 
